@@ -2,6 +2,11 @@
 
 A responsive multi-page website built with **Bootstrap 5** as part of an internship assignment. The site showcases a fictional company called **RK Technology** and demonstrates modern web layout techniques using official Bootstrap components.
 
+## Links
+
+- **GitHub Repository:** [github.com/Arpenaboyina/BootStrap_Task](https://github.com/Arpenaboyina/BootStrap_Task.git)
+- **Live Preview (Netlify):** [quiet-brioche-656642.netlify.app](https://quiet-brioche-656642.netlify.app/)
+
 ## Overview
 
 This project is a static website with three pages — Home, About, and Contact. It uses Bootstrap's grid system, utility classes, and pre-built components to create a clean, mobile-friendly user interface without a backend or build step.
@@ -10,7 +15,8 @@ The design remixes patterns from Bootstrap's official examples (Heroes, Album, a
 
 ## Live Preview
 
-Open `index.html` in any modern web browser to view the site locally. No installation or server setup is required.
+- View the deployed site here: **https://quiet-brioche-656642.netlify.app/**
+- Or open `index.html` in any modern web browser to view the site locally. No installation or server setup is required.
 
 ## Technologies Used
 
@@ -70,7 +76,10 @@ Bootstrap-Internship-Task/
 
 ## How to Run
 
-1. Clone or download this repository.
+1. Clone or download this repository:
+   ```bash
+   git clone https://github.com/Arpenaboyina/BootStrap_Task.git
+   ```
 2. Navigate to the project folder.
 3. Open `index.html` in your browser (double-click the file or use **Open with Live Server** in VS Code).
 
@@ -99,6 +108,11 @@ The site is fully responsive:
 - The contact form is for display only. Submitting the form does not send data anywhere.
 - External images are loaded from Unsplash and RandomUser.me.
 - Ensure `style.css` exists in the project root for any custom styles referenced by the HTML files.
+
+## Submission
+
+- **GitHub Repository:** https://github.com/Arpenaboyina/BootStrap_Task.git
+- **Live Deployed Link:** https://quiet-brioche-656642.netlify.app/
 
 ## Author
 
