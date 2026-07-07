@@ -114,10 +114,31 @@ The site is fully responsive:
 - **GitHub Repository:** https://github.com/Arpenaboyina/BootStrap_Task.git
 - **Live Deployed Link:** https://quiet-brioche-656642.netlify.app/
 
-## Author
+## Project Reflection
 
-Built as a **Bootstrap Internship Task** for RK Technology.
+### How I approached the project
 
-## License
+I started by going through the official [Bootstrap 5 Examples](https://getbootstrap.com/docs/5.3/examples/) to see how real Bootstrap components — navbars, hero sections, cards, and forms — are structured and styled. Rather than copying any single example page wholesale, I picked pieces I liked from different examples (the Album layout's card grid, the Hero layout's two-column intro, and a standard Bootstrap form) and combined them into three original pages for a fictional company, RK Technology:
 
-This project is created for educational and internship purposes.
+1. **`index.html`** — Built the navbar first since it's shared across all pages, then added the hero section, a 3-card feature grid, a call-to-action banner, and a footer.
+2. **`about.html`** — Reused the same navbar, then added a Mission/Vision card pair and a team section with profile cards.
+3. **`contact.html`** — Built the contact form using Bootstrap's `form-control` and `form-label` utilities, then added a footer with contact details and working hours.
+
+Once all three pages had a working first draft, I went back and adjusted spacing, colors, and typography utilities so the pages felt consistent rather than three separate designs.
+
+### AI tools and external help used
+
+In the interest of transparency: I built the pages myself using Bootstrap 5 and the official documentation as my main reference. While working on `contact.html`, I ran into a layout bug where the footer had gotten nested inside the contact form's column div instead of sitting as its own full-width section. After finding this bug, I used **ChatGPT** to help me understand and fix it — it helped identify the mismatched `<div>` nesting and how to restructure the closing tags so the footer would render correctly, full-width, below the form section.
+
+Outside of that specific bug fix, the component selection, layout decisions, and content (copy, section order, styling choices) across all three pages were done by me using the official Bootstrap documentation as the primary reference.
+
+### Challenges faced
+
+- **Layout/markup bugs:** The trickiest issue was a mismatched `<div>` nesting in the contact page that caused the footer to render inside the form's column instead of full-width. I caught this by reviewing the rendered layout and fixed it by restructuring the closing tags so the footer sits outside the `<section>` as its own block.
+- **Consistency across pages:** Since each page was built somewhat independently, keeping the navbar, footer, and spacing consistent across all three took a second pass of comparison and cleanup.
+- **Form without a backend:** Since this is a static site with no server, the contact form doesn't actually send data anywhere yet — I noted this clearly rather than implying it works end-to-end.
+
+### Learning journey
+
+This task pushed me to actually read Bootstrap's component documentation rather than just recognizing class names, and to think about layout composition (how a hero, feature grid, and CTA band flow into each other) rather than treating each component in isolation. Debugging the div-nesting issue also reinforced why consistent indentation and closing tags matter, especially in nested Bootstrap grid structures (`container` → `row` → `col`).
+
